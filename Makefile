@@ -10,7 +10,7 @@ OBJS := $(SRCS:%=$(BUILD_DIR)/%.o)
 INC_DIRS := include
 INC_FLAGS := $(addprefix -I,$(INC_DIRS))
 
-LIBRARIES	:= -lSDL2 -lGLEW -lGL
+LIBRARIES	:= -lGL -lGLU -lglfw3 -lX11 -lXxf86vm -lXrandr -lpthread -lXi -ldl
 
 CPPFLAGS ?= $(INC_FLAGS) -MMD -MP -fPIC -Llib
 
@@ -46,6 +46,7 @@ $(BUILD_DIR)/%.cpp.o: %.cpp
 
 clean:
 	$(RM) -r $(BUILD_DIR)
+	$(RM) -r $(SOFOLDER)
 
 all: $(BUILD_DIR)/$(TARGET_EXEC)
 
