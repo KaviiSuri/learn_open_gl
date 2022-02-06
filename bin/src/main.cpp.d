@@ -175,7 +175,8 @@ bin/src/main.cpp.o: src/main.cpp include/glad/glad.h \
  include/glm/gtc/../gtc/../ext/vector_int1_sized.hpp \
  include/glm/gtc/../gtc/../ext/vector_uint1.hpp \
  include/glm/gtc/../gtc/../ext/vector_uint1_sized.hpp \
- include/glm/gtc/type_ptr.inl include/learnopengl/shader.hpp
+ include/glm/gtc/type_ptr.inl include/learnopengl/shader.hpp \
+ include/learnopengl/camera.hpp
 
 include/glad/glad.h:
 
@@ -568,3 +569,5 @@ include/glm/gtc/../gtc/../ext/vector_uint1_sized.hpp:
 include/glm/gtc/type_ptr.inl:
 
 include/learnopengl/shader.hpp:
+
+include/learnopengl/camera.hpp:
